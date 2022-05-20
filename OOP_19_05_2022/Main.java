@@ -3,45 +3,15 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	   /* MyDate date1=new MyDate();
-        date1.day=10;
-        date1.month=5;
-        date1.year=2022;*/
+	    Auto auto1=new Auto("Toyota", 2000, "зелёный");
+        Auto auto2=new Auto("Москвич", 1970, "красный");
+        Auto auto3=new Auto("Nissan",2015,"бежевый");
+        Auto auto4=new Auto("Жигули",1989,"голубой");
+        Auto auto5=new Auto("Renault", 2020,"серебристый");
 
-        MyDate date1=new MyDate(10,5,2022);
-        MyDate date2=new MyDate(10,5,2022);
-        MyDate date3=new MyDate(10,5,2022);
-        MyDate date4=new MyDate(10,5,2022);
-        MyDate date5=new MyDate(10,5,2022);
-
-        MyDate[] dateArray={date1, date2, date3, date4,date5};
-        for (int i = 0; i < dateArray.length; i++) {
-            dateArray[i].print();
+        Auto[] autoArray={auto1, auto2, auto3, auto4, auto5};
+        for (int i = 0; i < autoArray.length; i++) {
+            autoArray[i].print();
         }
-
-        date1.print();
-
-        MyDate newDAte=addDay(date1);
-        newDAte.print();
     }
-   /* public static void printDate(MyDate date){
-        System.out.println(date.day+"/"+date.month+"/"+date.year);*/
-  //  }
-
-
-
-    public static MyDate addDay(MyDate date){
-        MyDate result= new MyDate(date.day+1, date.month, date.year);
-        result.day=date.day+1;
-        result.month=date.month;
-        result.year=date.year;
-        return result;
-    }
-    /*public static MyDate createMyDate(int day, int month, int year){
-        MyDate result=new MyDate();
-        result.day=day;
-        result.month=month;
-        result.year=year;
-        return result;
-    }*/
 }
